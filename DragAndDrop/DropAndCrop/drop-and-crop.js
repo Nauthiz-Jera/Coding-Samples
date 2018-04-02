@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { DropTarget } from 'react-dnd';
 import { NativeTypes } from 'react-dnd-html5-backend';
 import Modal from 'react-modal';
-import Croppie from 'croppie';
+import {Croppie} from 'croppie';
 import 'croppie/croppie.css';
 
 import { COLOR_PALETTE } from 'constants/styles';
@@ -86,7 +86,7 @@ class DropAndCrop extends Component {
     this.setImageSrc(fileURL);
     this.setState(
       {
-        isModalOpen: true,
+        modalIsOpen: true,
       },
       () => this.openImageCropper(),
     );
